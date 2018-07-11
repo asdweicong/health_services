@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>健康服务保险</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="stylesheet" href="./stylesheets/LCalendar.css">
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?4ee5c42bd5e0d91c81e2fc020ffa1dc3";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body>
+<!--校验弹窗-->
+<div id="modal_tips" class="modal hide">
+    <div class="modal_contain">
+        <div class="modal_c" style="text-align: center">
+            <span id="modal_tips_content"></span>
+        </div>
+        <div class="modal_btn">好 的</div>
+    </div>
+</div>
+<!--成功弹窗-->
+<div id="modal_success" class="modal hide">
+    <div class="modal_contain">
+        <div class="modal_c">
+            您已领取成功，体检套餐专属口令“省呗福利”，请按<span  class="modal_btn1" id="openTheRule" style="color: red;border-bottom: 1px solid red;">领取规则</span>进行操作
+        </div>
+        <div class="modal_btn">好的</div>
+    </div>
+</div>
+<!--领取规则弹窗-->
+<div id="PolicyOfInsurance" class="modal hide">
+    <div class="PolicyOfInsuranceText">
+        <div class="closeTheWindow"><img src="images/out.png"></div>
+        <div class="PolicyOfInsuranceTitle">
+            <img src="images/title1.png" alt="">
+        </div>
+        <div class="PolicyTextList">
+            <ul class="PolicyTextListUl">
+                <li>每人仅限领取一份，只能本人领取。</li>
+                <li>领取人必须为本人，年龄在22-50周岁，且居住、工作、生活在以下地区：北京、上海、广东、四川、湖北、江苏、浙江、山东、辽宁、陕西、湖南、重庆、河南、江西、天津。</li>
+                <li>军人、警察等职业的客户无法参与。</li>
+                <li>活动期内免费领取“善诊关爱服务孝心体检”及招商信诺“VIP门诊预约”各一份，限量100份，送完为止。</li>
+                <li>活动期内免费领取“善诊关爱服务孝心体检”及招商信诺“VIP门诊预约”各一份，限量100份，送完为止。</li>
+                <li>"善诊关爱服务孝心体检”由第三方服务商“善诊”提供，年龄要求50周岁以上。</li>
+                <li>
+                    <div>“善诊关爱服务孝心体检”兑换流程:</div>
+                    <div>1.关注“善诊”微信公众号，进入体检领取页面；</div>
+                    <div>2.点击图片中“点我兑换口令”，输入专属口令,兑换成相应抵扣券；</div>
+                    <div>3.点击前往选购套餐，在“父母系列”中选择口令价为0元的“关爱父母孝心套餐”即可享受免费体检；</div>
+                    <div>4.下单成功后，选择前往预约，在“善诊”公众号中选择相应城市和门店、体检时间，进行预约，及查看体检报告，及查看体检报告。</div>
+                </li>
+                <li>
+                    <div>“招商信诺VIP门诊预约”操作规则：</div>
+                    <div>1.免费领取后次月1日生效，服务期限3个月；</div>
+                    <div>2.客户可致电招商信诺服务热线400-820-2287申请服务(就诊前7个工作日)，服务时间：9:00-18:00，周末及法定节假日除外；</div>
+                    <div>3.医疗咨询热线只从医学角度对客户提供预检分诊以及预约相关服务，不涉及任何保险福利考量；</div>
+                    <div>4.招商信诺对医疗机构提供的治疗效果不作保证，对任何治疗形式所产生的后果，不负有任何责任。客户就诊后与医院产生的医疗纠纷，招商信诺免责并不参与协调；</div>
+                    <div>5.本服务不可指定专家，部分医院热门科室因资源紧张的情况下，招商信诺将推荐同等级其它医院的专家；</div>
+                    <div>6.本服务不适用于儿科、产科、急诊科、心理科、体检及医技科室，如超声科、影像科等；</div>
+                    <div>7.本服务不适用于急重症、新生儿(一个月以内)、精神类疾病患者；</div>
+                    <div>8.本服务不含挂号费及任何客户在院内因治疗、化验、检查、住院、取药等产生的费用；</div>
+                    <div>9.如因就诊专家停诊、出差、出国等特殊情况导致服务不能按时提供，以医院最终出诊安排为准，招商信诺免责。招商信诺将免费推荐并协调安排一次网络医院内同等级的其它医院和专家预约；</div>
+                    <div>10.预约时客户须使用真实姓名和身份证号，如因客户个人原因造成服务无法使用，招商信诺免责；</div>
+                    <div>11.预约成功后如需取消或者改期，请至少在就诊日提前2个工作日（当天18:00前）提出；服务期内，取消或者改期累积不得超过2次。</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--显示内容-->
+<div class="main_bg">
+    <div class="contain">
+        <img src="images/bj_1.png">
+    </div>
+    <div class="setMeal">
+        <div class="setMealImg">
+            <img src="images/img1.png">
+        </div>
+        <div class="setMealImg">
+            <img src="images/VIPing.png">
+        </div>
+    </div>
+    <div class="appointment">
+        <div class="appointmentBorder">
+            <div class="appointmentTitle">
+                <img src="./images/title2.png" alt="">
+            </div>
+            <div class="appointmentText">
+                <div class="appointmentTextList appointmentTextList1">
+                    <i></i>客户拨打服务热线提出服务申请
+                </div>
+                <div class="time">
+                    (提前7个工作日）
+                </div>
+                <div class="appointmentTextList appointmentTextList2">
+                    <i></i>服务专员纪录用户信息/疾病情况及就医需求
+                </div>
+                <div class="appointmentTextList appointmentTextList3">
+                    <i></i>常规医学情况判断及预约操作
+                </div>
+                <div class="appointmentTextList appointmentTextList4">
+                    <i></i>预约反馈，同时为后续服务提供衔接窗口
+                </div>
+                <div class="time">
+                    （2个工作日内）
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="t3_form_contain">
+        <form action="http://LG.cignacmb.com/cmc-lg/formCmcNewAction_saveForm.action" method="post" id="myform"
+              name="myform" target="myiframe">
+
+            <div class="inputContent">
+                <div class="t3_form">
+                    <div class="form_input">
+                        <input id="name" name="name" type="text" maxlength="10" placeholder="请输入您的姓名">
+                    </div>
+                    <div class="borderLine"></div>
+                    <div class="form_six">
+                        <div class="sixman red">
+                            <input type="radio" id="man" name="gender" value="M" checked="checked"/>
+                            <label class="">男</label>
+                        </div>
+                        <div class="sixman">
+                            <input type="radio" id="girl" name="gender" value="F"/>
+                            <label>女</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="t3_form">
+                    <div class="form_input2">
+                        <input id="mobile" name="mobile" maxlength="11" type="tel" placeholder="请输入您的手机号码">
+                    </div>
+                </div>
+                <div class="t3_form">
+                    <div class="form_input3">
+                        <input type="text" id="start_date" placeholder="请选择您的出生日期"
+                               readonly="readonly"/>
+                    </div>
+                    <div class="form_date">
+                        <div class="form_date_text">
+                            年
+                        </div>
+                        <div class="borderDateLina1"></div>
+                        <div class="form_date_text">
+                            月
+                        </div>
+                        <div class="borderDateLina2"></div>
+                        <div class="form_date_text">
+                            日
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input type="hidden" id="iqId" name="iqId" value="1111118"/>
+            <input type="hidden" id="birthday" name="birthday"/>
+            <input type="hidden" id="campaignCode" name="campaignCode" value="2GWGOBA8AC"/>
+            <input type="hidden" id="product" name="product" value="SHDTC"/>
+            <input type="hidden" id="urlFlag" name="urlFlag" value="YKYX1"/>
+            <input type="hidden" id="remark" name="remark" value=""/>
+            <input type="hidden" id="url" name="url" value=""/>
+
+            <div class="Submission" id="t3_btn">
+                免费领取
+            </div>
+            <div class="Remarks">
+                <div class="RemarkCheck">
+                    <img id="choose" src="./images/gou.png" alt="">
+                    <img id="noChoose" src="./images/gou1.png" alt="" style="display: none">
+                </div>
+                <div class="checkboxText">本人已阅读<span id="receive"
+                                                     style="color: #fd6d65;margin:0 5px;border-bottom: 1px solid #fd6d65">领取规则</span>,并同意招商信诺后续进行保险相关业务。
+                </div>
+            </div>
+        </form>
+        <iframe id="myiframe" name="myiframe" style="display: none;"></iframe>
+    </div>
+
+</div>
+<!--loading-->
+<div class="loading" style="display:none;">
+    <table>
+        <tbody>
+        <tr>
+            <td><img src="./images/loading.gif" width="40px"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<script src="./javascripts/jquery.min.js"></script>
+<script src="./javascripts/LCalendar.js"></script>
+<script src="./javascripts/deferred.js"></script>
+<script src="./javascripts/index.js"></script>
+<!--<script src="http://m.cignacmb.com/public/js/common_out.js"></script>-->
+<script src="http://m.cignacmb.com/public/js/common_LG.js"></script>
+<!--<script src="./js/common_url.js"></script>-->
+<script type="text/javascript">
+    var calendar = new LCalendar();
+    calendar.init({
+        'trigger': '#start_date', //标签id
+        'type': 'date', //date 调出日期选择 datetime 调出日期时间选择 time 调出时间选择 ym 调出年月选择,
+        'minDate': (new Date().getFullYear() - 57) + '-' + 1 + '-' + 1, //最小日期
+        'maxDate': (new Date().getFullYear()) + '-' + (new Date().getMonth()) + '-' + (new Date().getDate()) //最大日期
+    });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,369 @@
+html ,body {
+  width: 100%;
+  height:100%;
+  margin: 0;
+  padding: 0;
+  color: #595758;
+  background: #fff282;
+}
+* {
+  box-sizing: border-box;
+}
+
+.main_bg{
+  position: relative;
+  overflow: hidden;
+}
+/**banner*/
+.contain{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.contain img{
+  width: 100%;
+}
+/*内容图片*/
+.setMeal{
+  width: 100%;
+  overflow: hidden;
+  background: #fff282;
+}
+.setMealImg{
+  width: 90%;
+  overflow: hidden;
+  margin: 2rem auto;
+}
+.setMealImg img{
+  width: 100%;
+}
+/*预约规则*/
+.appointment{
+  width: 100%;
+  overflow: hidden;
+  background: url("../images/bj_3.png") no-repeat center;
+  /*padding: 2rem 0;*/
+  padding-top: 2.5rem;
+  background-size: 100%;
+}
+.appointmentBorder{
+  width: 95%;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #fe9893;
+  padding-bottom: 1rem;
+}
+.appointmentTitle{
+  width: 75%;
+  overflow: hidden;
+  margin: 1rem auto;
+}
+.appointmentTitle img{
+  width: 100%;
+}
+.appointmentText{
+  width: 95%;
+  overflow: hidden;
+  margin: 0 auto;
+  font-size: 14.7px;
+}
+.appointmentTextList{
+  position: relative;
+  padding-left: 3rem;
+  padding-top: 5px;
+  padding-bottom: 2px;
+}
+.appointmentTextList i{
+  position: absolute;
+  width: 1px;
+  height: 15px;
+  background: #fe6e66;
+  top:0.5rem;
+  left: 2.5rem;
+}
+.appointmentTextList1{
+  background: url("../images/1.png") no-repeat center left;
+  background-size: 10%;
+}
+.appointmentTextList2{
+  background: url("../images/2.png") no-repeat center left;
+  background-size: 10%;
+  margin: 0.6rem 0;
+}
+.appointmentTextList3{
+  background: url("../images/3.png") no-repeat center left;
+  background-size: 10%;
+  margin-bottom: 0.3rem;
+}
+.appointmentTextList4{
+  background: url("../images/4.png") no-repeat center left;
+  background-size: 10%;
+}
+.time{
+  padding-left: 3rem;
+}
+
+/*表单填写*/
+.t3_form_contain{
+  background: url("../images/bj_4.png");
+  background-size: 100% 100%;
+  width: 100%;
+  margin:0  auto;
+  padding: 4.5rem 0 2.5rem 0;
+}
+.inputContent{
+  width: 85%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.t3_form{
+  position: relative;
+  margin: 0 auto 15px auto;
+  width:100%;
+  overflow: hidden;
+  border: 1px solid #fe6e66;
+  border-radius: 15px;
+  height: 3rem;
+}
+.form_input{
+  width: 75%;
+  background-color: #ffffff;
+  color: #595758;
+  height: 100%;
+  float: left;
+}
+.form_input2{
+  width: 100%;
+  background-color: #ffffff;
+  color: #595758;
+}
+.form_input3{
+  width: 65%;
+  height: 100%;
+  background-color: #ffffff;
+  color: #595758;
+  float: left;
+}
+
+.form_input input , .form_input2 input , .form_input3 input{
+  font-size: 14px;
+  width: 100%;
+  padding: 1rem 0.4rem;
+  outline: none;
+  color: #548299;
+  border: none;
+}
+.borderLine{
+  width: 1px;
+  background-color: #55839a;
+  height: 1.5rem;
+  position: absolute;
+  top: 0.7rem;
+  right: 2.4rem;
+}
+.form_six{
+  height: 100%;
+  width: 25%;
+  border: none;
+  color: #595758;
+  outline: none;
+  float: left;
+  background-color: #86e1ff;
+}
+.sixman{
+  font-size: 14.7px;
+  float: left;
+  width: 50%;
+  text-align: center;
+  color: #548299;
+  overflow: hidden;
+  padding: 0.81rem 0;
+  position: relative;
+}
+
+.sixman input{
+  width: 97%;
+  height: 2.0rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.red{
+  color: #ffffff;
+}
+.form_date{
+  width: 35%;
+  height: 100%;
+  position: relative;
+  border: none;
+  color: #595758;
+  outline: none;
+  float: left;
+  background-color: #86e1ff;
+}
+.form_date_text{
+  font-size: 14.7px;
+  float: left;
+  width: 33%;
+  text-align: center;
+  color: #548299;
+  overflow: hidden;
+  padding: 0.8rem 0;
+  position: relative;
+}
+.borderDateLina1{
+  width: 1px;
+  background-color: #55839a;
+  height: 1.3rem;
+  position: absolute;
+  top: 0.8rem;
+  right: 4.7rem;
+}
+.borderDateLina2{
+  width: 1px;
+  background-color: #55839a;
+  height: 1.3rem;
+  position: absolute;
+  top: 0.8rem;
+  right: 2.3rem;
+}
+
+
+.Submission{
+  width: 85%;
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+  margin: 2% auto 0 auto;
+  padding: 0.5rem 0 0.8rem 0;
+  background: #fe6e66;
+}
+/*底部规则*/
+.Remarks{
+  margin: 1.2rem auto 0 auto;
+  width:85%;
+  text-align:center;
+  color: #575757;
+  font-size: 13px!important;
+  overflow: hidden;
+}
+.RemarkCheck{
+  width: 6%;
+  float: left;
+  overflow: hidden;
+  margin-top: 0.2rem;
+}
+.RemarkCheck img{
+  width: 100%;
+}
+.checkboxText{
+  float: left;
+  width: 90%;
+  margin-bottom: 0.8rem;
+  display: inline-block;
+  text-align: left;
+  margin-left: 3%;
+
+}
+
+/*校验弹窗*/
+.modal{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.77);
+  z-index: 999;
+}
+.modal_contain{
+  position: relative;
+  width: 90%;
+  height: 0;
+  padding-bottom: 77%;
+  margin: 30% auto 0;
+  background: url(../images/T_04.png) no-repeat;
+  background-size: 100% auto;
+}
+.modal_c{
+  position: absolute;
+  width: 76%;
+  text-align: justify;
+  top: 34%;
+  left: 12%;
+  line-height: 160%;
+}
+.modal_btn{
+  position: absolute;
+  width: 76%;
+  padding-bottom: 13%;
+  left: 12%;
+  top: 70%;
+  height: 0;
+  background: #fe6e66;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  line-height: 260%;
+  border-radius: 8px;
+}
+.hide{
+  display: none;
+}
+/*领取规则弹窗*/
+.PolicyOfInsuranceText{
+  position: relative;
+  width: 90%;
+  margin: 15% auto 0;
+  background-color: #ffffff;
+  overflow: scroll;
+  height: 85%;
+}
+.closeTheWindow{
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 20%;
+  text-align: right;
+}
+.closeTheWindow img{
+  width: 35%;
+}
+.PolicyOfInsuranceTitle{
+  width: 80%;
+  overflow: hidden;
+  margin: 2.5rem auto 1.5rem auto;
+}
+.PolicyOfInsuranceTitle img{
+  width: 100%;
+ }
+.PolicyTextListUl{
+  padding-right: 1.3rem;
+}
+.PolicyTextListUl li{
+  margin-bottom: 0.5rem ;
+  text-align: justify;
+}
+.PolicyTextListUl li div{
+  margin-bottom: 0.5rem ;
+  text-align: justify;
+}
+/*loading*/
+.loading {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.6);
+}
+.loading table {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.name_mobile_input:-ms-input-placeholder{
+  color: red;
+  opacity:1;
+  font-size: 12px;
+}
